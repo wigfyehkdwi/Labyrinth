@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ProveYourself/PY.unity
+    guid: 33c08e32ece4cc3448ab035b4080b132
+  - enabled: 1
+    path: Assets/Scenes/Labyrinth.unity
+    guid: 22c8553cd79e40b4c910741a9340f4c6
   m_configObjects: {}
