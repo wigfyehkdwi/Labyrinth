@@ -3,16 +3,16 @@ using UnityEngine.AI;
 
 public class MoveToGoal : MonoBehaviour
 {
-    public Transform goal;
+    public Transform[] goals;
     private Animator animator;
     private NavMeshAgent agent;
+    private int goalIdx = 0;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         animator = GetComponentInChildren<Animator>();
         agent = GetComponent<NavMeshAgent>();
-        agent.destination = goal.position;
+        agent.destination = goals[0].position;
     }
 
     private void Update()
@@ -24,6 +24,12 @@ public class MoveToGoal : MonoBehaviour
         else
         {
             animator.SetBool("isRunning", false);
+
+            if (goalIdx < (goals.Length - 1))
+            {
+                Destroy(goals[goalIdx].gameObject);
+                agent.destination = goals[++goalIdx].position;
+            }
         }
     }
 }
