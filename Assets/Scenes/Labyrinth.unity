@@ -3374,7 +3374,6 @@ GameObject:
   - component: {fileID: 1284053623}
   - component: {fileID: 1284053624}
   - component: {fileID: 1284053625}
-  - component: {fileID: 1284053626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3471,7 +3470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28ad3eca0f8e0bc4ab10e63ba7170a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goal: {fileID: 2030947156}
+  goals:
+  - {fileID: 416925644}
+  - {fileID: 2030947156}
 --- !u!195 &1284053625
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3482,7 +3483,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 4.5
+  m_Speed: 5.25
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -3494,18 +3495,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1284053626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1284053618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e95da92cd4c13439013cb61d3cf153, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1294329856 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1a3e3b7e3e65ab74b85d4b467c829b59, type: 3}
